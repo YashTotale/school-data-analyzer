@@ -1,0 +1,22 @@
+{
+  "name": "school-data",
+  "private": true,
+  "scripts": {
+    "data:high-schools": "ts-node scripts/get-high-schools.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YashTotale/school-data.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@hack4impact/logger": "^3.0.3",
+    "@types/mkdirp": "^1.0.1",
+    "@types/prettier": "^2.3.0",
+    "axios": "^0.21.1",
+    "mkdirp": "^1.0.4",
+    "prettier": "^2.3.1",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.4"
+  }
+}
