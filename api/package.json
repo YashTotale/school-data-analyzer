@@ -1,9 +1,7 @@
 {
-  "name": "school-data",
+  "name": "school-data-api",
   "private": true,
-  "scripts": {
-    "data:high-schools": "ts-node scripts/get-high-schools.ts"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/YashTotale/school-data.git"
@@ -13,6 +11,7 @@
     "@hack4impact/logger": "^3.0.3",
     "@types/express": "^4.17.12",
     "@types/mkdirp": "^1.0.1",
+    "@types/pg": "^8.6.0",
     "@types/prettier": "^2.3.0",
     "axios": "^0.21.1",
     "mkdirp": "^1.0.4",
@@ -21,6 +20,7 @@
     "typescript": "^4.3.4"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "pg": "^8.6.0"
   }
 }
