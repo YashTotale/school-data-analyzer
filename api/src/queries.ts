@@ -6,9 +6,9 @@ config();
 
 const Pool = pg.Pool;
 const pool = new Pool({
-  user: process.env.DB_USER,
+  user: process.env.PG_USER,
   host: "localhost",
-  database: process.env.DB_NAME,
+  database: process.env.PG_NAME,
   password: process.env.DB_PASSWORD,
   port: 5432,
 });

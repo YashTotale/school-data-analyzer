@@ -8,9 +8,10 @@
   },
   "license": "MIT",
   "dependencies": {
+    "dotenv-safe": "^8.2.0",
     "express": "^4.17.1",
     "pg": "^8.6.0",
-    "dotenv-safe": "^8.2.0"
+    "sequelize": "^6.6.5"
   },
   "devDependencies": {
     "@hack4impact/logger": "^3.0.3",
