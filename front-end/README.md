@@ -1,0 +1,37 @@
+# School Data Frontend <!-- omit in toc -->
+
+## Contents <!-- omit in toc -->
+
+- [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Begin](#begin)
+  - [Install dependencies](#install-dependencies)
+  - [Start local development](#start-local-development)
+
+## Setup
+
+### Prerequisites
+
+1. [Node.JS](https://nodejs.org/en/), version `>=15.x`
+2. [NPM](https://www.npmjs.com/), version `>=6.x`
+
+### Begin
+
+1. Follow the initial setup steps in the [root README.md file](/README.md#setup)
+2. Change directories to `front-end`
+
+   ```shell
+   cd front-end
+   ```
+
+### Install dependencies
+
+```shell
+npm install
+```
+
+### Start local development
+
+```shell
+npm start
+```

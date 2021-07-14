@@ -1,49 +1,68 @@
-# School Data API
+# School Data API <!-- omit in toc -->
+
+## Contents <!-- omit in toc -->
+
+- [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Begin](#begin)
+  - [Connect to Postgres](#connect-to-postgres)
+  - [Create a user](#create-a-user)
+  - [Create a database](#create-a-database)
+  - [Create `.env`](#create-env)
 
 ## Setup
 
-### Install Postgres
+### Prerequisites
 
-```shell
-$ brew install postgresql
-$ brew services start postgresql
-```
-
-### Create a local DB
-
-1. Connect to Postgres
+1. [Postgres](https://www.postgresql.org/), version `>=13.x`
 
    ```shell
-   psql postgres
+   $ brew install postgresql
+   $ brew services start postgresql
    ```
 
-2. Create a user
+### Begin
 
-   ```postgres
-   postgres=> CREATE ROLE <username> WITH LOGIN PASSWORD '<password>';
-   postgres=> ALTER ROLE <username> CREATEDB;
-   postgres=> \q
+1. Follow the initial setup steps in the [root README.md file](/README.md#setup)
+2. Change directories to `api`
+
+   ```shell
+   cd api
    ```
 
-3. Create a database
+### Connect to Postgres
 
-   First, connect with the user you just created
+```shell
+psql postgres
+```
+
+### Create a user
+
+```postgres
+postgres=> CREATE ROLE <username> WITH LOGIN PASSWORD '<password>';
+postgres=> ALTER ROLE <username> CREATEDB;
+postgres=> \q
+```
+
+### Create a database
+
+1. First, connect with the user you just created
 
    ```shell
    psql -d postgres -U <username>
    ```
 
-   Then, create a database (recommended db_name is `schooldata`)
+2. Then, create a database (recommended db_name is `schooldata`)
 
    ```postgres
     postgres=> CREATE DATABASE <db_name>;
     postgres=> \c <db_name>
    ```
 
-4. Add values to `.env` in `api`
+### Create `.env`
 
-   ```text
-   PG_USER=<username>
-   PG_PASSWORD=<password>
-   DB_NAME=db_name
-   ```
+```text
+PG_USER=<username>
+PG_PASSWORD=<password>
+DB_NAME=db_name
+```
