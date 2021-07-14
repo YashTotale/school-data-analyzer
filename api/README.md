@@ -62,7 +62,7 @@ postgres=> \q
 ### Create `.env`
 
 ```text
-PG_USER=<username>
+PG_USERNAME=<username>
 PG_PASSWORD=<password>
 DB_NAME=db_name
 ```

@@ -1,4 +1,4 @@
-# School Data API <!-- omit in toc -->
+# School Data <!-- omit in toc -->
 
 ## Contents <!-- omit in toc -->
 
