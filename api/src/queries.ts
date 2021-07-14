@@ -1,12 +1,15 @@
 import { RequestHandler } from "express";
+import { config } from "dotenv-safe";
 import pg from "pg";
+
+config();
 
 const Pool = pg.Pool;
 const pool = new Pool({
-  user: "me",
+  user: process.env.DB_USER,
   host: "localhost",
-  database: "api",
-  password: "password",
+  database: process.env.DB_NAME,
+  password: process.env.DB_PASSWORD,
   port: 5432,
 });
 
