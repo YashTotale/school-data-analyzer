@@ -27,13 +27,13 @@
 2. Change directories to `api`
 
    ```shell
-   cd api
+   $ cd api
    ```
 
 ### Connect to Postgres
 
 ```shell
-psql postgres
+$ psql postgres
 ```
 
 ### Create a user
@@ -49,7 +49,7 @@ postgres=> \q
 1. First, connect with the user you just created
 
    ```shell
-   psql -d postgres -U <username>
+   $ psql -d postgres -U <username>
    ```
 
 2. Then, create a database (recommended db_name is `schooldata`)

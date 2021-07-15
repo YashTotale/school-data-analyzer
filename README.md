@@ -6,6 +6,7 @@
   - [Prerequisites](#prerequisites)
   - [Clone the repository](#clone-the-repository)
   - [API Setup](#api-setup)
+  - [Notebooks Setup](#notebooks-setup)
   - [Frontend Setup](#frontend-setup)
 
 ## Setup
@@ -24,6 +25,10 @@ $ cd school-data
 ### API Setup
 
 Refer to the [API Setup](/api/README.md#setup)
+
+### Notebooks Setup
+
+Refer to the [Notebooks Setup](/notebooks/README.md#setup)
 
 ### Frontend Setup
 
