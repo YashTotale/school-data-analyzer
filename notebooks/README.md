@@ -7,6 +7,7 @@
   - [Begin](#begin)
   - [Create a virtual environment](#create-a-virtual-environment)
   - [Install dependencies](#install-dependencies)
+  - [Run the Python Notebook](#run-the-python-notebook)
 
 ## Setup
 
@@ -36,4 +37,12 @@ $ source venv/bin/activate
 
 ```
 $ pip3 install -r requirements.txt
+```
+
+### Run the Python Notebook
+
+**Make sure you have completed the [API setup](/api/README.md#setup)!**
+
+```shell
+$ jupyter nbconvert --to python --execute export_to_db.ipynb
 ```

@@ -9,6 +9,7 @@
   - [Create a user](#create-a-user)
   - [Create a database](#create-a-database)
   - [Create `.env`](#create-env)
+  - [Start local development](#start-local-development)
 
 ## Setup
 
@@ -28,6 +29,12 @@
 
    ```shell
    $ cd api
+   ```
+
+3. Install dependencies
+
+   ```shell
+   $ npm install
    ```
 
 ### Connect to Postgres
@@ -64,5 +71,11 @@ postgres=> \q
 ```text
 PG_USERNAME=<username>
 PG_PASSWORD=<password>
-DB_NAME=db_name
+DB_NAME=<db_name>
+```
+
+### Start local development
+
+```shell
+$ npm run dev
 ```

@@ -1,0 +1,12 @@
+# Notebook Checkpoints
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# Virtual Environment
+venv/
+
+# Transpiled Python
+export_to_db.py
+
+# Data files
+data/

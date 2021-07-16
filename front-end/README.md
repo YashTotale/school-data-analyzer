@@ -5,7 +5,6 @@
 - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Begin](#begin)
-  - [Install dependencies](#install-dependencies)
   - [Start local development](#start-local-development)
 
 ## Setup
@@ -24,11 +23,11 @@
    cd front-end
    ```
 
-### Install dependencies
+3. Install Dependencies
 
-```shell
-npm install
-```
+   ```shell
+   npm install
+   ```
 
 ### Start local development
 
