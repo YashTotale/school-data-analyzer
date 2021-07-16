@@ -7,6 +7,3 @@ venv/
 
 # Transpiled Python
 export_to_db.py
-
-# Data files
-data/

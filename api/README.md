@@ -53,13 +53,13 @@ postgres=> \q
 
 ### Create a database
 
-1. First, connect with the user you just created
+1. Connect with the user you just created
 
    ```shell
    $ psql -d postgres -U <username>
    ```
 
-2. Then, create a database (recommended db_name is `schooldata`)
+2. Create a database (recommended db_name is `schooldata`)
 
    ```postgres
     postgres=> CREATE DATABASE <db_name>;
