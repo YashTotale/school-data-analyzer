@@ -6,13 +6,14 @@ node_modules/
 .pnp.js
 
 # testing
-/coverage
+coverage/
 
 # production
-/build
+build/
+dist/
 
 # misc
-/logs
+logs/
 
 .DS_Store
 .env
