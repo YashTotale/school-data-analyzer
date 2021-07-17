@@ -32,4 +32,4 @@ Refer to the [Notebooks Setup](/notebooks/README.md#setup)
 
 ### Frontend Setup
 
-Refer to the [Frontend Setup](/front-end/README.md#setup)
+Refer to the [Frontend Setup](/frontend/README.md#setup)
