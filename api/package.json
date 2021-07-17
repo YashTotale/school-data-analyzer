@@ -2,7 +2,7 @@
   "name": "school-data-api",
   "private": true,
   "scripts": {
-    "dev": "ts-node-dev index.ts --respawn",
+    "dev": "ts-node-dev --clear index.ts",
     "build": "ncc build index.ts --out dist --minify"
   },
   "repository": {
