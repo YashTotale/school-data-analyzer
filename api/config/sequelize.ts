@@ -9,6 +9,9 @@ const sequelize = new Sequelize({
   username: process.env.PG_USERNAME,
   password: process.env.PG_PASSWORD,
   database: process.env.DB_NAME,
+  define: {
+    freezeTableName: true,
+  },
 });
 
 const testConnection = async () => {
