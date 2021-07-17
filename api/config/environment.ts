@@ -1,7 +1,7 @@
 const ENVIRONMENTS = ["development", "production"];
 
 // Will be either 'development' or 'production'
-let currentEnvironment: string = "";
+let currentEnvironment = "";
 
 if (!currentEnvironment) {
   currentEnvironment = ENVIRONMENTS.includes(process.env.NODE_ENV ?? "")

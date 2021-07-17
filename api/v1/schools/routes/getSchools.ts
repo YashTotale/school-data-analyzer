@@ -11,7 +11,7 @@ interface Query {
   limit?: string;
 }
 
-const getSchools: RequestHandler<{}, any, any, Query> = async (req, res) => {
+const getSchools: RequestHandler<any, any, any, Query> = async (req, res) => {
   const { limit: limitStr = "100" } = req.query;
   const limit = parseInt(limitStr) || 100;
 

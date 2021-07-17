@@ -29,14 +29,14 @@
 
 ### Create a virtual environment
 
-```
+```shell
 $ python3 -m venv venv
 $ source venv/bin/activate
 ```
 
 ### Install dependencies
 
-```
+```shell
 $ pip3 install -r requirements.txt
 ```
 

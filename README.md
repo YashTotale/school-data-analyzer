@@ -4,7 +4,7 @@
 
 - [Setup](#setup)
   - [Prerequisites](#prerequisites)
-  - [Clone the repository](#clone-the-repository)
+  - [Begin](#begin)
   - [API Setup](#api-setup)
   - [Notebooks Setup](#notebooks-setup)
   - [Frontend Setup](#frontend-setup)
@@ -14,13 +14,28 @@
 ### Prerequisites
 
 1. [Git](https://git-scm.com/), version `>=2.x`
+2. [Node.JS](https://nodejs.org/en/), version `>=15.x`
+3. [NPM](https://www.npmjs.com/), version `>=6.x`
 
-### Clone the repository
+### Begin
 
-```shell
-$ git clone https://github.com/YashTotale/school-data.git
-$ cd school-data
-```
+1. Clone the repository
+
+   ```shell
+   $ git clone https://github.com/YashTotale/school-data.git
+   ```
+
+2. Change directories to `school-data`
+
+   ```shell
+   $ cd school-data
+   ```
+
+3. Install dependencies
+
+   ```shell
+   $ npm install
+   ```
 
 ### API Setup
 
