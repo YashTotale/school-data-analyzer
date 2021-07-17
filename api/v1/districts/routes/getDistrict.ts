@@ -18,11 +18,7 @@ const getDistrict: RequestHandler<Params> = async (req, res) => {
     return res.status(400).send(INVALID_ID);
   }
 
-  const district = await District.findOne({
-    where: {
-      index: id,
-    },
-  });
+  const district = await District.findByPk(id);
 
   if (!district) {
     return res.status(400).send(INVALID_ID);

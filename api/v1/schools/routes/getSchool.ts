@@ -18,11 +18,7 @@ const getSchool: RequestHandler<Params> = async (req, res) => {
     return res.status(400).send(INVALID_ID);
   }
 
-  const school = await School.findOne({
-    where: {
-      index: id,
-    },
-  });
+  const school = await School.findByPk(id);
 
   if (!school) {
     return res.status(400).send(INVALID_ID);
