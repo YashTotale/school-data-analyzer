@@ -27,7 +27,9 @@ app.use("/api/v1", v1Router);
 const PORT = process.env.PORT || 8080;
 
 app.listen(PORT, () => {
+  console.log("-".repeat(35));
   console.log(colors.green(`App listening on port ${PORT}.`));
   console.log(`Running on ${ENVIRONMENT} environment.`);
   console.log("Press Ctrl+C to quit.");
+  console.log();
 });
