@@ -1,0 +1,80 @@
+name: API CI
+
+on:
+  push:
+    paths:
+      - "api/**"
+      - "notebooks/**"
+      - ".github/workflows/integrate-api.yml"
+    branches:
+      - main
+  pull_request:
+    paths:
+      - "api/**"
+      - "notebooks/**"
+      - ".github/workflows/integrate-api.yml"
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    services:
+      postgres:
+        image: postgres:latest
+        env:
+          POSTGRES_USER: me
+          POSTGRES_PASSWORD: password
+          POSTGRES_DB: schooldata
+          POSTGRES_HOST: localhost
+          POSTGRES_PORT: 5432
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.x
+
+      - name: Setup Node
+        uses: actions/setup-node@v2.1.4
+        with:
+          node-version: 15.x
+
+      - name: Install Notebook Dependencies
+        working-directory: ./notebooks
+        run: pip install -r requirements.txt
+
+      - name: Setup Notebook Environment
+        working-directory: ./notebooks
+        run: echo '${{ secrets.NB_ENV_FILE }}' > .env
+
+      - name: Convert Notebook to Python
+        working-directory: ./notebooks
+        run: jupyter-nbconvert --to python export_to_db.ipynb
+
+      - name: Run Seed Script
+        working-directory: ./notebooks
+        run: python export_to_db.py
+
+      - name: Install API Dependencies
+        working-directory: ./api
+        run: npm ci
+
+      - name: Setup API Environment
+        working-directory: ./api
+        run: echo '${{ secrets.API_ENV_FILE }}' > .env
+
+      - name: Build API
+        working-directory: ./api
+        run: npm run build
