@@ -26,5 +26,5 @@
 ### Start local development
 
 ```shell
-$ npm start
+$ npm run dev
 ```
