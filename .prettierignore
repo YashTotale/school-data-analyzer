@@ -8,6 +8,7 @@ coverage/
 dist/
 out/
 build/
+.next/
 
 # misc
 .husky/_
