@@ -1,4 +1,4 @@
-# School Data <!-- omit in toc -->
+# School Data Analyzer <!-- omit in toc -->
 
 ## Contents <!-- omit in toc -->
 
@@ -22,13 +22,13 @@
 1. Clone the repository
 
    ```shell
-   $ git clone https://github.com/YashTotale/school-data.git
+   $ git clone https://github.com/YashTotale/school-data-analyzer.git
    ```
 
-2. Change directories to `school-data`
+2. Change directories to `school-data-analyzer`
 
    ```shell
-   $ cd school-data
+   $ cd school-data-analyzer
    ```
 
 3. Install dependencies
